@@ -7,11 +7,10 @@
   
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 
 <body>
-
-<div class="container">
 
 <!-- HEADER -->
 <header class="header">
@@ -20,10 +19,10 @@
     <div class="header-left">Проект Land-it</div>
 
     <nav class="nav">
-      <a href="#">Услуги</a>
-      <a href="#">Проекты</a>
-      <a href="#">Процесс</a>
-      <a href="#">Стоимость</a>
+      <a href="#features">Услуги</a>
+      <a href="#projects">Проекты</a>
+      <a href="#process">Процесс</a>
+      <a href="#pricing">Стоимость</a>
     </nav>
 
     <div class="logo">Land-it</div>
@@ -31,123 +30,154 @@
   </div>
 </header>
 
-  <!-- HERO -->
-  <section class="hero">
+<!-- HERO -->
+<section class="hero">
+  <div class="container hero-inner">
+
     <div class="hero-text">
       <h1>Лендинги,<br>которые приносят заявки</h1>
       <p>Создаю страницы, которые можно сразу запускать в рекламу и получать клиентов</p>
 
       <div class="buttons">
         <a href="https://wa.me/77074948947?text=Здравствуйте,%20хочу%20узнать%20стоимость%20лендинга" 
-   class="btn primary" 
-   target="_blank">
-  Написать в WhatsApp
-</a>
-        <a href="#" class="btn secondary">Посмотреть примеры ↓</a>
+           class="btn primary" 
+           target="_blank">
+          Написать в WhatsApp
+        </a>
+
+        <a href="#projects" class="btn secondary">Посмотреть примеры ↓</a>
       </div>
     </div>
 
     <div class="hero-image">
-      <img src="images/hero.png" alt="Лендинг для фитнес-тренера">
+      <img src="images/hero.png" alt="Пример лендинга">
     </div>
-  </section>
 
-  <!-- WHAT I DO -->
-  <section class="features">
+  </div>
+</section>
+
+<!-- WHAT I DO -->
+<section id="features" class="features">
+  <div class="container">
+
     <h2 class="section-title">Что я делаю</h2>
 
-    <div class="grid">
-      <div class="card">
-        <h3>Лендинги под заявки</h3>
-        <p>Продуманная структура, которая ведет пользователя к целевому действию</p>
-      </div>
+<div class="grid">
 
-      <div class="card">
-        <h3>Дизайн + разработка</h3>
-        <p>Создаю дизайн и сразу собираю на чистом коде</p>
-      </div>
-
-      <div class="card">
-        <h3>Быстрый запуск (1–2 дня)</h3>
-        <p>Делаю качественно и быстро</p>
-      </div>
+  <div class="card">
+    <div class="icon-box">
+      <i data-lucide="layout"></i>
     </div>
-  </section>
+    <h3>Лендинги под заявки</h3>
+    <p>Продуманная структура, которая ведет пользователя к целевому действию</p>
+  </div>
 
-  <!-- PROJECTS -->
-  <section class="section">
+  <div class="card">
+    <div class="icon-box">
+      <i data-lucide="code"></i>
+    </div>
+    <h3>Дизайн + разработка</h3>
+    <p>Создаю дизайн и сразу собираю на чистом коде</p>
+  </div>
+
+  <div class="card">
+    <div class="icon-box">
+      <i data-lucide="zap"></i>
+    </div>
+    <h3>Быстрый запуск (1–2 дня)</h3>
+    <p>Делаю качественно и быстро</p>
+  </div>
+
+</div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="section">
+  <div class="container">
+
     <h2 class="section-title">Примеры работ</h2>
 
     <div class="grid">
       <div class="card project">
-        <img src="images/fitness.png">
+        <img src="images/fitness.png" alt="Лендинг для фитнес тренера">
         <h3>Лендинг для фитнес-тренера</h3>
         <p>Акцент на результат и запись</p>
       </div>
 
       <div class="card project">
-        <img src="images/furniture.png">
+        <img src="images/furniture.png" alt="Лендинг для мебели">
         <h3>Лендинг для мебели</h3>
         <p>Чистый минимализм</p>
       </div>
 
       <div class="card project">
-        <img src="images/auto.png">
+        <img src="images/auto.png" alt="Лендинг для авто">
         <h3>Лендинг для авто</h3>
         <p>Четкая структура заявки</p>
       </div>
     </div>
-  </section>
 
-  <!-- PROCESS -->
-  <section class="section">
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section id="process" class="section">
+  <div class="container">
+
     <h2 class="section-title">Как я работаю</h2>
 
     <div class="steps">
-  <div class="step">
-    <div class="circle">1</div>
-    <p>Обсуждаем задачу</p>
+      <div class="step">
+        <div class="circle">1</div>
+        <p>Обсуждаем задачу</p>
+      </div>
+
+      <div class="step">
+        <div class="circle">2</div>
+        <p>Собираю структуру</p>
+      </div>
+
+      <div class="step">
+        <div class="circle">3</div>
+        <p>Дизайн и разработка</p>
+      </div>
+
+      <div class="step">
+        <div class="circle">4</div>
+        <p>Запуск и поддержка</p>
+      </div>
+    </div>
+
   </div>
+</section>
 
-  <div class="step">
-    <div class="circle">2</div>
-    <p>Собираю структуру</p>
+<!-- PRICE -->
+<section id="pricing" class="pricing">
+  <div class="container">
+
+    <div class="pricing-left">
+      <h2>Стоимость</h2>
+      <div class="price">80 000 – 120 000 тг</div>
+      <p>Срок 1–2 дня</p>
+    </div>
+
+    <div class="pricing-right">
+      <h3>Нужна структура под ваш проект?</h3>
+      <p>Предложу решение и накидаю структуру бесплатно</p>
+
+      <a href="https://wa.me/77074948947?text=Здравствуйте,%20хочу%20узнать%20стоимость%20лендинга" 
+         class="btn primary" 
+         target="_blank">
+        Получить консультацию
+      </a>
+    </div>
+
   </div>
+</section>
 
-  <div class="step">
-    <div class="circle">3</div>
-    <p>Дизайн и разработка</p>
-  </div>
-
-  <div class="step">
-    <div class="circle">4</div>
-    <p>Запуск и поддержка</p>
-  </div>
-</div>
-  </section>
-
-  <!-- PRICE -->
-<div class="pricing">
-
-  <div class="pricing-left">
-    <h2>Стоимость</h2>
-    <div class="price">80 000 – 120 000 тг</div>
-    <p>Срок 1–2 дня</p>
-  </div>
-
-  <div class="pricing-right">
-    <h3>Нужна структура под ваш проект?</h3>
-    <p>Предложу решение и накидаю структуру бесплатно</p>
-    <a href="https://wa.me/77074948947?text=Здравствуйте,%20хочу%20узнать%20стоимость%20лендинга" 
-   class="btn primary" 
-   target="_blank">
-  Получить консультацию
-</a>
-  </div>
-
-</div>
-
-</div>
+<script>
+  lucide.createIcons();
+</script>
 
 </body>
 </html>
