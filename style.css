@@ -51,6 +51,22 @@ body {
   padding: 16px 24px; /* ⬅️ key change */
 }
 
+/* BURGER ICON */
+.burger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.burger span {
+  width: 24px;
+  height: 2px;
+  background: #111;
+  display: block;
+  transition: 0.3s;
+}
+
 .nav {
   display: flex;
   gap: 24px;
@@ -409,9 +425,36 @@ html {
     padding: 14px 16px; /* balanced for small screens */
   }
 
-  .nav {
-    display: none; /* hide menu for now */
+  .burger {
+    display: flex;
   }
+
+  .nav {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 260px;
+    height: 100vh;
+    background: #ffffff;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 100px 24px;
+
+    box-shadow: -10px 0 30px rgba(0,0,0,0.05);
+    transition: 0.3s ease;
+  }
+
+  .nav.active {
+    right: 0;
+  }
+
+  .nav a {
+    font-size: 18px;
+    font-weight: 500;
+  }
+}
 
   .logo {
     font-size: 16px;
