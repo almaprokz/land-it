@@ -299,7 +299,7 @@ body {
   font-size: 44px;
   font-weight: 700;
   color: #0a7f5a;
-  margin-bottom: 12px;
+  margin-bottom: 8px;
   letter-spacing: -0.5px;
 }
 
@@ -391,25 +391,118 @@ html {
   scroll-behavior: smooth;
 }
 
-/* RESPONSIVE */
-@media (max-width: 900px) {
-  .hero {
+
+/* =========================
+   MOBILE (TABLET + PHONE)
+========================= */
+
+@media (max-width: 768px) {
+
+  /* CONTAINER */
+  .container {
+    padding: 0 16px;
+  }
+
+  /* HEADER */
+  .header-inner {
+    padding: 12px 0;
+  }
+
+  .nav {
+    display: none; /* hide menu for now */
+  }
+
+  .logo {
+    font-size: 16px;
+  }
+
+  /* HERO */
+  .hero-inner {
     flex-direction: column;
+    text-align: center;
+    gap: 30px;
+  }
+
+  .hero h1 {
+    font-size: 28px;
+    line-height: 1.2;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+
+  .buttons {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .btn {
+    width: 100%;
     text-align: center;
   }
 
-  .grid {
-    grid-template-columns: 1fr;
+  .hero-image img {
+    width: 100%;
+    height: auto;
   }
 
-  .process {
+  /* FEATURES (WHAT I DO) */
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .card {
+    padding: 20px;
+  }
+
+  .section-title {
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+
+  /* PROJECTS */
+  .project img {
+    width: 100%;
+    border-radius: 10px;
+  }
+
+  /* PROCESS (IMPORTANT FIX) */
+  .steps {
     flex-direction: column;
-    gap: 20px;
+    gap: 30px;
+  }
+
+  .steps::before {
+    display: none; /* remove horizontal line */
+  }
+
+  .step {
+    text-align: center;
+  }
+
+  /* PRICING */
+  .pricing-inner {
+    flex-direction: column;
+    text-align: center;
+    padding: 30px 20px;
+    gap: 30px;
+  }
+
+  .pricing-divider {
+    display: none;
   }
 
   .price {
-    flex-direction: column;
-    text-align: center;
-    gap: 20px;
+    font-size: 32px;
+  }
+
+  .pricing-right {
+    max-width: 100%;
+  }
+
+  .pricing-right .btn {
+    width: 100%;
   }
 }
